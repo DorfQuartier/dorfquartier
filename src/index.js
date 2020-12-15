@@ -11,7 +11,6 @@ class Site extends React.Component {
         für eventuelle Unannehmlichkeiten diesbezüglich.
         <br />Bei Anfragen, erreichen Sie uns nach wie vor unter:
         <br /><b>+49 5971 8 99 95 31</b>
-        Test test 123
         </p>
       </div>
     );
