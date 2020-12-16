@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family:  Times, serif;
   background-color: rgb(65,56,41);
   color: rgb(150,150,150);
 }
