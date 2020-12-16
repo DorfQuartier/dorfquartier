@@ -1,3 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(65,56,41);
+  color: rgb(150,150,150);
+}
+
+h1 {
+  color: rgb(193,188,163);
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  color: rgb(172,166,126);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(193,188,163);
+  text-decoration: none;
+}
+
+#follower {
+  text-align: center;
+}
+
+#headline, #content {
+  margin-top: 75px;
+}
+
+#content {
+  text-align: center;
 }
