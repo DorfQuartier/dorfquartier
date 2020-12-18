@@ -20,18 +20,13 @@ import dorfquartier_kitchen3 from './Bilder/dorfquartier_kitchen3.jpg';
 import dorfquartier_flur from './Bilder/dorfquartier_flur.jpg';
 import dorfquartier_book from './Bilder/dorfquartier_book.jpg';
 
-
-function refreshPage() {
-    window.location.reload(false);
-  }
-
 class Head extends React.Component {
   render () {
     return (
       <div class="container" id="head">
         <div class="row">
           <div class="col">
-            <a href="" onClick={refreshPage} id="DQ"><img src={dorfquartier_logo} width="100" height="100" /><br />
+            <a href="https://dorfquartier.net" id="DQ"><img src={dorfquartier_logo} alt="DorfQuartier" width="100" height="100" /><br />
               DorfQuartier
             </a>
             <p id="slogan"> IHR ZUHAUSE WEG VON ZUHAUSE </p>
@@ -115,13 +110,13 @@ window.addEventListener('scroll', this.listenScrollEvent)
             <br />
             <div class="row">
               <div class="col">
-                <img src={dorfquartier_kdetail} width="99%" height="99%" />
+                <img src={dorfquartier_kdetail} alt="DorfQuartier" width="99%" height="99%" />
               </div>
               <div class="col">
-                <img src={dorfquartier_bdetail} width="99%" height="99%" />
+                <img src={dorfquartier_bdetail} alt="DorfQuartier" width="99%" height="99%" />
               </div>
               <div class="col">
-                <img src={dorfquartier_zdetail} width="99%" height="99%" />
+                <img src={dorfquartier_zdetail} alt="DorfQuartier" width="99%" height="99%" />
               </div>
             </div>
             <br />
@@ -133,49 +128,49 @@ window.addEventListener('scroll', this.listenScrollEvent)
               <br />
               <div class="row">
                 <div class="col">
-                  <img src={dorfquartier_bett1} width="99%" height="99%" />
+                  <img src={dorfquartier_bett1} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
                 <div class="col">
-                  <img src={dorfquartier_bett2} width="99%" height="99%" />
+                  <img src={dorfquartier_bett2} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
                 <div class="col">
-                  <img src={dorfquartier_bett3} width="99%" height="99%" />
-                </div>
-              </div>
-              <br />
-              <div class="row">
-                <div class="col">
-                  <img src={dorfquartier_bad1} width="99%" height="99%" />
-                </div>
-                <div class="col">
-                  <img src={dorfquartier_ball} width="99%" height="99%" />
-                </div>
-                <div class="col">
-                  <img src={dorfquartier_bad3} width="99%" height="99%" />
+                  <img src={dorfquartier_bett3} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
               </div>
               <br />
               <div class="row">
                 <div class="col">
-                  <img src={dorfquartier_bad4} width="99%" height="99%" />
+                  <img src={dorfquartier_bad1} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
                 <div class="col">
-                  <img src={dorfquartier_kitchen2} width="99%" height="99%" />
+                  <img src={dorfquartier_ball} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
                 <div class="col">
-                  <img src={dorfquartier_kitchen3} width="99%" height="99%" />
+                  <img src={dorfquartier_bad3} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
               </div>
               <br />
               <div class="row">
                 <div class="col">
-                  <img src={dorfquartier_book} width="99%" height="99%" />
+                  <img src={dorfquartier_bad4} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
                 <div class="col">
-                  <img src={dorfquartier_living} width="99%" height="99%" />
+                  <img src={dorfquartier_kitchen2} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
                 <div class="col">
-                  <img src={dorfquartier_flur} width="99%" height="99%" />
+                  <img src={dorfquartier_kitchen3} alt="DorfQuartier" width="99%" height="99%" />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col">
+                  <img src={dorfquartier_book} alt="DorfQuartier" width="99%" height="99%" />
+                </div>
+                <div class="col">
+                  <img src={dorfquartier_living} alt="DorfQuartier" width="99%" height="99%" />
+                </div>
+                <div class="col">
+                  <img src={dorfquartier_flur} alt="DorfQuartier" width="99%" height="99%" />
                 </div>
               </div>
               <br />
@@ -200,7 +195,7 @@ window.addEventListener('scroll', this.listenScrollEvent)
                 <li>Langzeitvermietung auf Anfrage</li>
               </ul>
               <p>alle Preise inkl. Handtücher, Bettwäsche und Endreinigung </p>
-              <img src={dorfquartier_amenity} width="45%" height="45%" />
+              <img src={dorfquartier_amenity}  alt="DorfQuartier" width="45%" height="45%" />
             </div>
             <hr />
             <div id="Kontakt" className="section">
@@ -212,7 +207,7 @@ window.addEventListener('scroll', this.listenScrollEvent)
               <br />
               </p>
               <figure>
-              <iframe width="600" height="450" src="https://www.google.com/maps/embed/v1/place?q=Mesumer%20Stra%C3%9Fe%2020%2C%20Rheine%2C%20Deutschland&amp;key=AIzaSyBKUbIP-4_MrR1agKEJ1cNbm7wUtDeKMck" allowfullscreen=""></iframe>
+              <iframe width="600" height="450" src="https://www.google.com/maps/embed/v1/place?q=Mesumer%20Stra%C3%9Fe%2020%2C%20Rheine%2C%20Deutschland&amp;key=AIzaSyBKUbIP-4_MrR1agKEJ1cNbm7wUtDeKMck" title="Unser Standort" allowFullScreen=""></iframe>
               </figure>
             </div>
             <hr />
