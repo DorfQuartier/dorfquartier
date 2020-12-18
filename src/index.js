@@ -25,70 +25,87 @@ function refreshPage() {
     window.location.reload(false);
   }
 
+class Head extends React.Component {
+  render () {
+    return (
+      <div class="container" id="head">
+        <div class="row">
+          <div class="col">
+            <a href="" onClick={refreshPage} id="DQ"><img src={dorfquartier_logo} width="100" height="100" /><br />
+              DorfQuartier
+            </a>
+            <p id="slogan"> IHR ZUHAUSE WEG VON ZUHAUSE </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
 class NavBar extends React.Component {
   render() {
     return (
       <div class="container" id="NavBar">
         <div class="row">
-          <div class="col">
-            <a href="" onClick={refreshPage}><img src={dorfquartier_logo} width="100" height="100" /><br />
-              Dorfquartier
-            </a>
+          <div class="col-3" id="Menupoint">
+            <a href="#ErsteEindruecke">Erste Eindrücke</a>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-3" id="Menupoint">
             <a href="#Bilderundmehr">Bilder & Mehr</a>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-3" id="Menupoint">
             <a href="#Preise">Preise & Ausstattung</a>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-3" id="Menupoint">
             <a href="#Kontakt">Kontakt & Standort</a>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-3" id="Menupoint">
             <a href="#Entdeckungsreise">Entdeckungsreise</a>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-3" id="Menupoint">
             <a href="#Datenschutz">Datenschutz & Impressum</a>
           </div>
         </div>
       </div>
-
     );
   }
 }
 
 class Site extends React.Component {
-
   /* For heading to change at sections
-     listenScrollEvent = e => {
-    if (window.scrollY > 400) {
-      const test = "Test1";
-    } else {
-      const test = "Test2";
-    }
+   listenScrollEvent = e => {
+  if (window.scrollY > 400) {
+    const test = "Test1";
+  } else {
+    const test = "Test2";
   }
-
-  componentDidMount() {
-  window.addEventListener('scroll', this.listenScrollEvent)
-  } */
-
+}
+componentDidMount() {
+window.addEventListener('scroll', this.listenScrollEvent)
+} */
   render() {
     return (
       <div class="container">
-        <div class="row" >
-        <div class="col" id="follower">
-          <NavBar />
+        <div class="row">
+          <div class="col" id="head">
+            <Head />
+            <hr />
+          </div>
         </div>
+        <div class="row" id="follower">
+          <div class="col">
+            <NavBar />
+          </div>
         </div>
         <div class="row">
           <div class="col" id="content">
@@ -315,7 +332,7 @@ class Site extends React.Component {
                 <h5>Impressum</h5>
                 <p>DorfQuartier GbR<br />Veronika u. Heinrich Zimmermann <br />Mesumer Str. 20 <br />48432 Rheine<br />+49 59 71 8 99 95 31 </p>
                 <hr />
-                <a href="#follower">Zurück zum Anfang</a>
+                <a href="#ErsteEindruecke">Zurück zum Anfang</a>
             </div>
           </div>
         </div>
@@ -325,7 +342,6 @@ class Site extends React.Component {
 }
 
 // ========================================
-
 ReactDOM.render(
   <Site />,
   document.getElementById('root')

@@ -27,14 +27,38 @@ a:hover {
   text-decoration: none;
 }
 
-#follower {
+#Menupoint {
+  margin-top: 5px;
+  background-color: rgb(193,188,163);
+  align-items: center;
+}
+
+#Menupoint > a {
+  color: rgb(50,50,50);
+}
+
+#follower, #head {
   text-align: center;
 }
 
-#headline, #content {
-  margin-top: 75px;
+#follower {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 900px;
+  margin-top: 100px;
+  margin-left: -200px;
 }
 
 #content {
   text-align: center;
+}
+
+#DQ {
+  font-size: 40px;
+}
+
+#slogan {
+  font-family: Arial;
+  font-size: 12px;
 }
